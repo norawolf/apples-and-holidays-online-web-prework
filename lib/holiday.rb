@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |seasons, items|
       puts "#{seasons.to_s.capitalize!}:"
       items.each do |values|
-        puts "#{values.to_s.capitalize!}"
+        puts "#{values.join(", ").capitalize!}"
       end
     end
   end
